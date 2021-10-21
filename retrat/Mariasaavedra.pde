@@ -1,4 +1,6 @@
-void mariasaavedra() {
+void mariasaavedra(float posx, float posy) {
+  push();
+  translate(posx, posy);
   //gorro
   line(m,m*4,m*9,m*4);
   line(m*9,m*4,m*8,m*3);
@@ -38,4 +40,5 @@ void mariasaavedra() {
   ellipseMode(CENTER);
   noFill();
   ellipse(m*5,m*5,m/4,m/4+m/8);
+  pop();
 }
